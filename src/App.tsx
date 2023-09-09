@@ -1,11 +1,19 @@
 import Router from './router';
 import { FormProvider } from './contexts/FormContext';
+import { GlobalStyles } from './css/GlobalStyles';
+import { ThemeProvider } from 'styled-components';
+import defaultheme from './theme/theme';
 
 function App() {
   return (
-    <FormProvider>
-      <Router />
-    </FormProvider>
+    <>
+      <ThemeProvider theme={defaultheme}>
+        <GlobalStyles />
+        <FormProvider>
+          <Router />
+        </FormProvider>
+      </ThemeProvider>
+    </>
   );
 }
 
