@@ -25,17 +25,17 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'Lexend';
+    font-family: 'LexendLight';
     font-weight: 200;
     font-display: 'swap';
-    font-style: 'normal';
+    font-style: 'light';
     src: url('${LexendLightTtf}') format('truetype'),
          url('${LexendLightWoff}') format('woff'),
          url('${LexendLightWoff2}') format('woff2');
   }
 
   @font-face {
-    font-family: 'Lexend';
+    font-family: 'LexendNormal';
     font-weight: 400;
     font-display: 'swap';
     font-style: 'normal';
@@ -45,10 +45,10 @@ export const GlobalStyles = createGlobalStyle`
   }
 
   @font-face {
-    font-family: 'Lexend';
+    font-family: 'LexendBold';
     font-weight: 600;
     font-display: 'swap';
-    font-style: 'normal';
+    font-style: 'bold';
     src: url('${LexendBoldTtf}') format('truetype'),
          url('${LexendBoldWoff}') format('woff'),
          url('${LexendBoldWoff2}') format('woff2');
