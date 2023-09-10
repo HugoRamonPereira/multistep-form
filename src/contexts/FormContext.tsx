@@ -22,7 +22,7 @@ type FormProviderProps = PropsWithChildren;
 
 const initialData: StateProps = {
   currentStep: 0,
-  name: '',
+  name: 'Ramon',
   level: 0,
   email: '',
   github: ''

@@ -8,7 +8,8 @@ export default {
       blue700: '#02044A'
     },
     green: {
-      green500: '#25CD89'
+      green500: '#25CD89',
+      green600: '#21B87B'
     },
     purple: {
       purple100: '#B8B8D4'

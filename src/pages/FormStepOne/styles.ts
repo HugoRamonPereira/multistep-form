@@ -5,12 +5,15 @@ export const Container = styled.div`
   p {
     font-size: 0.8125rem;
     color: ${({ theme }) => theme.colors.purple100};
+    font-family: 'LexendLight';
+    letter-spacing: 0.1rem;
   }
 
   h1 {
-    margin: 0;
+    margin: 0.5rem 0;
     padding: 0;
     font-size: 26;
+    font-family: 'LexendNormal';
   }
 
   hr {
@@ -21,7 +24,9 @@ export const Container = styled.div`
   }
 
   label {
-    font-size: 0.8125rem;
+    font-family: 'LexendLight';
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
 
     input {
       display: block;
@@ -33,7 +38,9 @@ export const Container = styled.div`
       border-radius: 10px;
       color: ${({ theme }) => theme.colors.white.white};
       outline: 0;
+      font-family: 'LexendLight';
       font-size: 0.9375rem;
+      letter-spacing: 0.1rem;
       background-color: ${({ theme }) => theme.colors.blue.blue700};
     }
   }
@@ -41,12 +48,19 @@ export const Container = styled.div`
   button {
     background-color: ${({ theme }) => theme.colors.green.green500};
     color: ${({ theme }) => theme.colors.white.white};
-    font-size: 0.875rem;
+    font-family: 'LexendLight';
+    font-size: 1rem;
     font-weight: bold;
-    padding: 20px 40px;
+    letter-spacing: 0.1rem;
+    padding: 15px 35px;
     border: 0;
     border-radius: 10px;
     cursor: pointer;
     margin-top: 30px;
+
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.green.green600};
+      transition: 0.2s ease-in-out;
+    }
   }
 `;

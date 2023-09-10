@@ -7,11 +7,15 @@ export const Container = styled.div`
   h1 {
     margin: 0;
     padding: 0;
+    font-family: 'LexendNormal';
     font-size: 1.75rem;
   }
 
   p {
-    font-size: 0.875em;
+    font-family: 'LexendLight';
+    font-size: 1em;
     color: #B8B8D4;
+    letter-spacing: .05rem;
+    margin-top: 0.5rem;
   }
 `;
