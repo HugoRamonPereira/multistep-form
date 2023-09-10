@@ -48,7 +48,7 @@ export const Container = styled.div`
   button {
     background-color: ${({ theme }) => theme.colors.green.green500};
     color: ${({ theme }) => theme.colors.white.white};
-    font-family: 'LexendLight';
+    font-family: 'LexendNormal';
     font-size: 1rem;
     font-weight: bold;
     letter-spacing: 0.1rem;
