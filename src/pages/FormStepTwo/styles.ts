@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 
@@ -62,5 +63,23 @@ export const Container = styled.div`
       background-color: ${({ theme }) => theme.colors.green.green600};
       transition: 0.2s ease-in-out;
     }
+  }
+`;
+
+export const PrevButton = styled(Link)`
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 15px 35px;
+  color: ${({ theme }) => theme.colors.green.green500};
+  border: 2px solid ${({ theme }) => theme.colors.green.green500};
+  border-radius: 10px;
+  margin-right: 1rem;
+  font-family: 'LexendNormal';
+  letter-spacing: 0.1rem;
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.white.white};
+    background-color: ${({ theme }) => theme.colors.green.green500};
+    transition: 0.2s ease-in-out;
   }
 `;

@@ -10,10 +10,14 @@ function FormStepTwo() {
   const { state, dispatch } = useForm();
 
   useEffect(() => {
-    dispatch({
-      type: FormActions.setCurrentStep,
-      payload: 2
-    });
+    if (state.name === '') {
+      navigate('/');
+    } else {
+      dispatch({
+        type: FormActions.setCurrentStep,
+        payload: 2
+      });
+    }
   }, []);
 
   const handleNextStep = () => {
@@ -35,7 +39,7 @@ function FormStepTwo() {
     <Theme>
       <Styled.Container>
         <p>Step {state.currentStep} of 3 </p>
-        <h1>{state.name} which level are you?</h1>
+        <h1>{state.name}, which level are you?</h1>
         <p>Please select the option that best describes you.</p>
         <hr />
 
@@ -54,6 +58,12 @@ function FormStepTwo() {
           onClick={() => setLevel(1)}
         />
 
+        <Styled.PrevButton
+          to='/'
+          className='prevBtn'
+        >
+          Previous
+        </Styled.PrevButton>
         <button
           onClick={handleNextStep}
         >
