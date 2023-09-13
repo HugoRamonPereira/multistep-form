@@ -22,7 +22,7 @@ function FormStepTwo() {
 
   const handleNextStep = () => {
     if (state.name !== '') {
-      navigate('/steptwo');
+      navigate('/stepthree');
     } else {
       alert('Name is a mandatory field!');
     }
