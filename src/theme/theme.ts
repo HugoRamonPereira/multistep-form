@@ -13,7 +13,8 @@ export default {
       green600: '#21B87B',
     },
     purple: {
-      purple100: '#B8B8D4'
+      purple100: '#B8B8D4',
+      purple700: '#424370',
     }
   }
 };
