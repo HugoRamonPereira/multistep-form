@@ -4,7 +4,7 @@ import styled from 'styled-components';
 export const Container = styled.div`
   p {
     font-size: 0.8125rem;
-    color: ${({ theme }) => theme.colors.purple100};
+    color: ${({ theme }) => theme.colors.purple.purple100};
     font-family: 'LexendLight';
     letter-spacing: 0.1rem;
   }
